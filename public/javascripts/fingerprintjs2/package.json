@@ -1,0 +1,61 @@
+{
+  "name": "fingerprintjs2",
+  "version": "1.4.0",
+  "description": "Modern & flexible browser fingerprinting library",
+  "main": "dist/fingerprint2.min.js",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "eslint": "^0.14.1",
+    "gulp-eslint": "^0.4.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.1.0"
+  },
+  "scripts": {
+    "test": "specs/phantomjs.runner.sh specs/spec_runner.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valve/fingerprintjs2.git"
+  },
+  "keywords": [
+    "browser",
+    "identification",
+    "fingerprint",
+    "fingerprinting",
+    "privacy"
+  ],
+  "author": {
+    "name": "Valentin Vasilyev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Valve/fingerprintjs2/issues"
+  },
+  "homepage": "https://github.com/Valve/fingerprintjs2",
+  "gitHead": "75cbd474158f8ecce43e00f198c76e486b896937",
+  "_id": "fingerprintjs2@1.4.0",
+  "_shasum": "c0de47814656c94f9ce93e448dd88d0be07f6c70",
+  "_from": "fingerprintjs2@*",
+  "_npmVersion": "3.8.6",
+  "_nodeVersion": "6.1.0",
+  "_npmUser": {
+    "name": "valve",
+    "email": "valentin.vasilyev@outlook.com"
+  },
+  "dist": {
+    "shasum": "c0de47814656c94f9ce93e448dd88d0be07f6c70",
+    "tarball": "https://registry.npmjs.org/fingerprintjs2/-/fingerprintjs2-1.4.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "valve",
+      "email": "valentin.vasilyev@outlook.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/fingerprintjs2-1.4.0.tgz_1465742091097_0.3862738406751305"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/fingerprintjs2/-/fingerprintjs2-1.4.0.tgz"
+}
