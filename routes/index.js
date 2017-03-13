@@ -34,8 +34,18 @@ router.post('/identify', function (req, res) {
     var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
-    var url = 'mongodb://localhost:27017/test';
-    MongoClient.connect(url, function (err, db) {
+    // default to a 'localhost' configuration:
+    var connection_string = '127.0.0.1:27017/test';
+// if OPENSHIFT env variables are present, use the available connection info:
+    if (process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
+        connection_string = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
+            process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
+            process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
+            process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
+            process.env.OPENSHIFT_APP_NAME;
+    }
+    
+    MongoClient.connect(connection_string, function (err, db) {
         if (err) {
             console.log('Unable to connect to the mongoDB server. Error:', err);
         } else {
